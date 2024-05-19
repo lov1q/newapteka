@@ -1,0 +1,15 @@
+﻿<Window x:Class="newapteka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:newapteka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="bdapteka" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="158,126,0,0"/>
+        <ComboBox x:Name="searchtables" HorizontalAlignment="Left" Margin="158,96,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="savechanges" Content="Сохранить изменения" HorizontalAlignment="Left" Margin="295,85,0,0" VerticalAlignment="Top" Height="36" Width="184"/>
+    </Grid>
+</Window>
